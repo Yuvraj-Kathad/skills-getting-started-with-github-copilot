@@ -59,19 +59,108 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 16px;
+  border: 1px solid #dbe7ff;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #f6f9ff 100%);
+  box-shadow: 0 10px 24px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 1.15rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-description {
+  color: #455a64;
+}
+
+.activity-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 12px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #eef4ff;
+  color: #1a237e;
+  font-size: 0.92rem;
+  border: 1px solid #dbe7ff;
+}
+
+.pill.accent {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-color: #c8e6c9;
+}
+
+.participants-card {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f3f7ff;
+  border: 1px solid #dbe7ff;
+}
+
+.participants-card h5 {
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 0.98rem;
+}
+
+.participants-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.participant-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid #dbe7ff;
+  color: #334155;
+  font-size: 0.92rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(26, 35, 126, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.participant-chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(26, 35, 126, 0.12);
+}
+
+.participant-chip:focus-visible {
+  outline: 2px solid #1a237e;
+  outline-offset: 2px;
+}
+
+.participant-remove {
+  font-size: 0.95rem;
+}
+
+.participants-empty {
+  color: #607d8b;
+  font-style: italic;
+  margin-top: 6px;
 }
 
 .form-group {
